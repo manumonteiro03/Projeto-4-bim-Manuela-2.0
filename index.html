@@ -1,0 +1,51 @@
+<!DOCTYPE html>         <!-- Define que o documento usa HTML5 -->
+<html lang="pt-BR">     <!-- Define o idioma da página -->
+<head>
+  <meta charset="UTF-8">           <!-- Permite o uso de acentuação -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">        <!-- Torna o site responsivo -->
+  <title>Clínica Neuropulse</title>            <!-- Nome da aba do navegador -->
+  <link rel="stylesheet" href="style.css">     <!-- Importa o arquivo CSS -->
+</head>
+
+<body>
+  <!-- Cabeçalho com o nome da clínica -->
+  <header>
+    <h1>Clínica Neuropulse</h1>            <!-- Nome da clínica -->
+    <p>Especialidade: Neurologista - Neuromuscular</p>         <!-- Área médica -->
+  </header>
+
+  <!-- Seção com informações da clínica -->
+  <section class="informacoes">
+    <p>🏥 Endereço: Rua Gaviões da Fiel, 1910 - Corinthians, SP</p>       <!-- Endereço -->
+    <p>📞 Telefone: (16) 98120-5496</p>        <!-- Telefone de contato -->
+  </section>
+
+  <!-- Opção de tipo de atendimento -->
+    <label for="tipoAtendimento">Tipo de Atendimento:</label>
+    <select id="tipoAtendimento">
+      <option value="consulta">Consulta</option>
+      <option value="exame Eletroneuromiografia MMII">Exame Eletroneuromiografia MMII</option>
+      <option value="exame Eletroneuromiografia MMSS">Exame Eletroneuromiografia MMSS</option>
+      <option value="exame Eletroneuromiografia MMII e MMSS">Exame Eletroneuromiografia MMI e MMSS</option>
+      <option value="exame Eletroneuromiografia Face">Exame Eletroneuromiografia Face</option>
+    </select>
+
+    <!-- Opção de convênio -->
+    <label for="convenio">Tipo de Pagamento:</label>
+    <select id="convenio">
+      <option value="unimed">Convênio Unimed</option>
+      <option value="particular">Convênio Particular</option>
+    </select>
+
+    <!-- Botão que redireciona para conversa com secretária -->
+    <button onclick="agendar()">Agendar Consulta</button>
+  </main>
+
+  <!-- Rodapé com direitos -->
+  <footer>
+    <p>© 2025 Clínica Neuropulse - Cuidando de você com carinho ❤️</p>        <!-- Texto do rodapé -->
+  </footer>
+
+  <script src="script.js"></script>        <!-- Importa o arquivo JavaScript -->
+</body>
+</html> 
